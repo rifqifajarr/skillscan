@@ -1,0 +1,56 @@
+name: skillscan
+description: "A Resume Review App"
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  image_picker: ^0.8.4+4
+  logger: ^2.0.2+1
+  flutter_markdown: ^0.6.13
+  google_generative_ai: ^0.4.6
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  get: ^4.6.6
+  flutter_dotenv: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.11.0
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/scan_icon.png
+    - assets/images/skillscan_logo.png
+    - assets/images/background.png
+    - assets/images/app_icon.png
+    - .env
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter.ttf
+        - asset: assets/fonts/Inter-Italic.ttf
+          style: italic
+
+    - family: Kadwa
+      fonts:
+        - asset: assets/fonts/Kadwa-Regular.ttf
+        - asset: assets/fonts/Kadwa-Bold.ttf
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
